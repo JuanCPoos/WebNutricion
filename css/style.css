@@ -1,0 +1,28 @@
+html {
+    font-size: 20px;
+    background-color: brown;
+}
+
+nav {
+    width: 100%;
+}
+
+body {
+    width: 100px;
+    height: fit-content;
+
+}
+
+
+section {
+    background-color: aquamarine;
+}
+
+footer {
+    background-color: #0074d9;
+    /* Cambia este valor al color que desees */
+    color: white;
+    /* Cambia el color del texto si es necesario para que sea legible en el fondo */
+    padding: 10px;
+    /* Agrega espacio alrededor del contenido del pie de página */
+}
