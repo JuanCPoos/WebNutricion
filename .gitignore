@@ -1,0 +1,5 @@
+# Ignora la carpeta img_cache
+img_cache
+
+#Ignora archivos de texto
+.txt
