@@ -4,9 +4,10 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     display: block;
 }
+
 /*** BODY  ****/
 body {
     background-color: #F4F3F0;
@@ -16,10 +17,16 @@ body {
 
 /* HEADER */
 
-/*header {
+header {
     background-color: rgb(13, 109, 90);
     width: 100%;
 }
+
+.navbar {
+    padding: 30px 0px;
+}
+
+/*
 
 header ul li {
     margin: 5px;
@@ -37,50 +44,52 @@ header nav{
 }*/
 
 
-/*Mobile modo vertical*/
-@media only screen and (max-width: 320px){
-    body{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-
-    }
-    header nav{
-        display: block;
-    }
-}
 /* Mobile */
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 500px) {
 
-    header{
+    header {
         flex-direction: column;
         align-items: flex-start;
         background-color: rgb(13, 109, 90);
     }
-    header nav{
-        display: block;
-    }
-    footer nav{
-        width: min-content;
-        margin: 0 auto;
-        align-items: center;
-    }
-    footer nav ul{
-        display: block;
-        width: min-content;
-        margin: 7px;
 
+    header nav {
+        display: block;
+        margin: 0 auto;
     }
-    li a{
-        font-size: 16px;
+
+    footer .footer_menu {
+        display: block;
+        text-align: center;
     }
-    
+
+    /*
+    footer nav ul {}
+
+    footer ul li {
+        padding: 5px 0px;
+    }
+
+    footer ul li .redes {
+        display: inline;
+    }
+    */
+    footer ul li a {
+        font-size: 25px;
+    }
+
+    .redes {
+
+        padding: 30px 0px;
+        justify-content: space-around;
+    }
+
+
+
 }
 
 /* Tablet */
-@media only screen and (min-width: 501px) and (max-width:960px){
-    
-}
+@media only screen and (min-width: 501px) and (max-width:960px) {}
 
 
 ul {
@@ -92,7 +101,15 @@ ul li {
     width: fit-content;
 }
 
+@media only screen and (min-width: 961px) and (max-width:1200px) {
 
+    /* acomodar tamaño video */
+    main section .items_alim_saludable {
+        padding: 10px 7px;
+        background-color: antiquewhite;
+    }
+
+}
 
 
 /****  MAIN   ****/
@@ -101,30 +118,51 @@ main {
     padding: 10px;
 }
 
-.seccionDos {
+main .img_bienvenida .seccionDos {
     background-color: #fff;
 }
 
+main section h5 {
+    padding: 5px 0px;
+}
+
+main section .items_alim_saludable {
+    padding: 30px 40px;
+    background-color: antiquewhite;
+}
+
+main section .zona_videos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 20px 0px;
+}
+
+main section .zona_videos .video {}
+
+main #titulo h1 {
+    font-family: cursive;
+}
 
 
-
-
-/****  FIN MAIN   *****/
 
 
 /* FOOTER */
 
 footer {
-    background-color: rgb(13, 109, 90);
-    padding: 30px;
-    margin-top: 10px;
-}
-footer nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 80px;
+    margin-top: 20px;
 
 }
+
+footer nav {
+    display: block;
+    margin: 0 auto;
+}
+
 footer ul li {
     margin: 4px;
 }
@@ -135,21 +173,22 @@ footer ul li a {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-footer .redes{
-    margin: 7px 0px;
+footer .footer_menu .escuela {
+    color: cornflowerblue;
 }
+
 
 /* Títulos, subtitulos y párrafos generales */
 h1,
 h2,
 h3,
 h4,
-h5,
 p {
     width: fit-content;
     margin: 15px auto;
     padding: 5px;
 }
+
 
 /***   ***/
 
