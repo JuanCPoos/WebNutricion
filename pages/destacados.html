@@ -12,7 +12,7 @@
 
 <body>
     <!-- header -->
-    <header>
+    <header id="header">
         <nav class="navbar navbar-dark bg-success">
             <div class="container p-4">
                 <a class="navbar-brand" href="#">Lic. en Nutrición Evelyn Schroeder</a>
@@ -31,7 +31,7 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#seccion_nutricion">Salud y Nutrición</a>
@@ -40,7 +40,7 @@
                                 <a class="nav-link" href="/pages/destacados.html">Destacados</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/pages/sobremi.html">Sobre mi</a>
+                                <a class="nav-link" href="#">Sobre mi</a>
                             </li>
 
                             <li class="nav-item dropdown">
@@ -49,12 +49,10 @@
                                     Escuelita Saludable
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">Talleres</a></li>
-                                    <li><a class="dropdown-item" href="#">Consultas</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item" href="/pages/escuelitasaludable.html">Talleres</a></li>
+                                    <li><a class="dropdown-item" href="/pages/escuelitasaludable.html">Consultas</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Recetas</a></li>
+                                    <li><a class="dropdown-item" href="/pages/escuelitasaludable.html">Recetas</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -96,27 +94,48 @@
                     una alimentación saludable:</p>
                 <!-- cuadro de color con los items de alimentación salludable -->
                 <div class="items_alim_saludable">
-                    <h5>| Variedad de alimentos</h5>
-                    <p>Incluir una amplia variedad de alimentos asegura la obtención de diversos nutrientes esenciales.
-                        Frutas, verduras,
-                        granos enteros, proteínas magras y grasas saludables deben formar parte de la dieta diaria.</p>
-                    <div class="text-end">
-                        <h5>Frutas y verduras |</h5>
-                        <p>Son fuentes importantes de vitaminas, minerales, fibra y antioxidantes. Se recomienda
-                            consumir una variedad de colores
-                            para obtener diferentes nutrientes.
-                        </p>
+                    <div class="row">
+                        <div class="col m-2 p-4 bg-white rounded-start-2">
+
+                            <h5>| Variedad de alimentos</h5>
+                            <p>Incluir una amplia variedad de alimentos asegura la obtención de diversos nutrientes
+                                esenciales.
+                                Frutas, verduras,
+                                granos enteros, proteínas magras y grasas saludables deben formar parte de la dieta
+                                diaria.</p>
+
+
+                        </div>
+                        <div class="col m-2 p-4 bg-white rounded-end-2">
+                            <h5 class="text-end">Frutas y verduras |</h5>
+                            <p>Son fuentes importantes de vitaminas, minerales, fibra y antioxidantes. Se recomienda
+                                consumir una variedad de colores
+                                para obtener diferentes nutrientes.
+                            </p>
+
+                        </div>
                     </div>
-                    <h5>| Granos enteros</h5>
-                    <p>Optar por granos enteros en lugar de granos refinados proporciona fibra, vitaminas y minerales
-                        adicionales. Ejemplos
-                        incluyen avena, arroz integral, quinua y pan integral.</p>
+                    <div class="row">
+                        <div class="col m-2 p-4 bg-white rounded-start-2">
+                            <h5>| Granos enteros</h5>
+                            <p>Optar por granos enteros en lugar de granos refinados proporciona fibra, vitaminas y
+                                minerales
+                                adicionales. Ejemplos
+                                incluyen avena, arroz integral, quinua y pan integral.</p>
+                        </div>
+                        <div class="col m-2 p-4 bg-white rounded-end-2">
+                            <h5 class="text-end">Proteínas magras |</h5>
+                            <p>Fuentes de proteínas magras, como pescado, pollo, pavo, legumbres, nueces y tofu, son
+                                fundamentales para el crecimiento
+                                y la reparación de tejidos.
+                            </p>
+                        </div>
+                    </div>
+
+
+
                     <div class="text-end">
-                        <h5>Proteínas magras |</h5>
-                        <p>Fuentes de proteínas magras, como pescado, pollo, pavo, legumbres, nueces y tofu, son
-                            fundamentales para el crecimiento
-                            y la reparación de tejidos.
-                        </p>
+
                     </div>
                 </div>
             </section>

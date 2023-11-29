@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -147,8 +149,9 @@ main #titulo h1 {
     font-family: cursive;
 }
 
-
-
+main section .talleres {
+    background-image: url('https: //media.istockphoto.com/id/997568664/es/foto/profesor-explicando-frutas-a-los-alumnos-en-el-aula.jpg?s=612x612&w=0&k=20&c=kckcv6b4xVkF_PXTzqElsuF2u88V8EsSa6EqCRYhKOE=');
+}
 
 /* FOOTER */
 
@@ -170,7 +173,7 @@ footer ul li {
 footer ul li a {
     color: #F4F3F0;
     text-decoration: none;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
 footer .footer_menu .escuela {
@@ -187,6 +190,8 @@ p {
     width: fit-content;
     margin: 15px auto;
     padding: 5px;
+    font-family: 'Popins', sans-serif;
+    text-align: justify;
 }
 
 
