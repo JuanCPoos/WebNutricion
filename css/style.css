@@ -23,28 +23,12 @@ header {
     background-color: rgb(13, 109, 90);
     width: 100%;
 }
-
+header nav a:hover{
+    font-size: 25px;
+}
 .navbar {
     padding: 30px 0px;
 }
-
-/*
-
-header ul li {
-    margin: 5px;
-}
-
-header ul li a {
-    color: #F4F3F0;
-    text-decoration: none;
-}
-header nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 12px;
-}*/
-
 
 /* Mobile */
 @media only screen and (max-width: 500px) {
@@ -86,10 +70,6 @@ header nav{
 
 }
 
-/* Tablet */
-@media only screen and (min-width: 501px) and (max-width:960px) {}
-
-
 ul {
     display: flex;
 }
@@ -98,6 +78,9 @@ ul li {
     list-style-type: none;
     width: fit-content;
 }
+
+/* Tablet */
+@media only screen and (min-width: 501px) and (max-width:960px) {}
 
 
 @media only screen and (min-width: 961px) and (max-width:1200px) {
@@ -157,28 +140,27 @@ main section .talleres {
 
 /* FOOTER */
 
-footer {
-    padding: 80px;
-    margin-top: 20px;
-    background-color: #b3f79cbb;
+footer {    
+    background-color: rgb(54, 106, 128);
+    height: 260px;
+    box-shadow: 0px -4px 7px rgb(0,0,0,.5);
 }
 
+/* navegacion */
 footer nav {
     display: block;
     margin: 0 auto;
 }
 
-footer ul li {
-    margin: 4px;
+
+footer .classSuscripcion{
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
 }
-
-footer ul li a {    
-    text-decoration: none;
-
-}
-
-footer .footer_menu .escuela {
-    color: cornflowerblue;
+footer .newsletter{
+    max-width: 450px;
+    margin: 0 auto;
 }
 
 
@@ -205,12 +187,3 @@ input {
     margin: 5px;
 }
 
-form button {
-    background-color: rgb(13, 109, 90);
-    color: #F4F3F0;
-    margin: 15px;
-    padding: 15px 20px;
-    border-radius: 8px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1rem;
-}
