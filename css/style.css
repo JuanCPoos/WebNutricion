@@ -183,12 +183,10 @@ main section .sobremi_pages h6{
     background-color: rgb(54, 106, 128);     
     color: #fff;
     font-weight: 300;    
-    padding: 4px 0;
+    padding: 10px 0;
     text-align: center;
+    margin: 40px 0;
 }
-
-
-
 
 
 /* FOOTER */
