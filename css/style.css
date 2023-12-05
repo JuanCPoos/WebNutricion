@@ -133,7 +133,9 @@ ul li {
 main {
     padding-top: 104px;
 }
-
+main section{
+    margin: 40px
+}
 main .img_bienvenida .seccionDos {
     background-color: #fff;
     position: relative;
@@ -171,6 +173,13 @@ main #titulo h1 {
     padding: 0;
     margin: 0 auto;
 }
+/* pages sobremi.html */
+main section .diploma{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
 
 
 
@@ -205,6 +214,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p {
     width: fit-content;
     margin: 15px auto;
