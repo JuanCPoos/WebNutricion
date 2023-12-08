@@ -22,8 +22,7 @@ body {
 
 header {
     background-color: rgb(13, 109, 90);
-    width: 100%;
-    position: fixed;
+    width: 100%;    
     top: 0;
     z-index: 1000;
 }
@@ -128,6 +127,76 @@ main #titulo_h1{
     box-shadow: 0px 4px 7px rgb(0, 0, 0, .5);
 }
 
+/* links interes */
+main #links-interes{    
+    padding: 30px;
+    border-radius: 10px;
+    height: 60vh;
+}
+main section .link-interes  h3{
+    color: chartreuse;
+    float: left;
+    width: 100%;
+}
+/*agua*/
+main #links-interes .agua{
+    background-color:burlywood;
+    display: flex;
+    height: 20vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+main #links-interes h2{
+    font-size: 7rem;
+    position: absolute;
+}
+main #links-interes .border{
+    color: black;
+    text-shadow:
+        -1px -1px 0 white,
+        1px -1px 0 white,
+        1px 1px 0 white,
+        -1px 1px 0 white;
+}
+main #links-interes .wave{
+    color: #09f;
+    animation: wave 3s ease-in-out infinite;
+    
+}
+
+@keyframes wave{
+    0%, 100%{
+        clip-path: polygon(
+            0% 47%,
+            10% 48%,
+            33% 54%, 
+            54% 60%,
+            70% 61%,
+            84% 59%,
+            100% 52%,
+            100% 100%,
+            0 100% 
+        );
+    }
+    50% {
+        clip-path: polygon(
+            0% 60%,
+            15% 65%,
+            34% 66%, 
+            67 50%,
+            84% 45%,
+            100% 46%,
+            100% 100%,
+            0% 100% 
+        );
+    }
+}
+
+/* section cuatro */
+main #seccion_cuatro .seccion_cuatro{
+    margin-top: 6rem;
+}
 
 /* FOOTER */
 
