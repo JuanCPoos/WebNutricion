@@ -109,6 +109,18 @@ main section .sobremi_pages h6{
 }
 
 /* escuelita saludable */
+main section .talleres{
+    position: relative;        
+}
+main .bg-talleres{
+    background-color: #ffc107b8;
+    color: #fff;
+}
+main .bg-consultas{
+    background-color: #7bac6abb;
+    padding: 40px 0;
+    
+}
 
 main section .bg-image{
     opacity: 0.4;
