@@ -1,0 +1,21 @@
+header {
+    background-color: rgb(13, 109, 90);
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+
+    nav {
+        .logo_header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &:hover {
+            background-color: #2b9e69bb;
+            border-radius: 5px;
+            padding: 7px 10px;
+            font-style: oblique;
+        }
+    }
+}

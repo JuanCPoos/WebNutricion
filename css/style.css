@@ -27,12 +27,7 @@ header {
     z-index: 1000;
 }
 
-header nav .logo_header a:hover {
-    background-color: #2b9e69bb;
-    border-radius: 5px;
-    padding: 7px 10px;
-    font-style: oblique;
-}
+
 
 
 header nav .logo_header {
@@ -40,6 +35,12 @@ header nav .logo_header {
     display: flex;
     justify-content: space-between;
 
+}
+header nav .logo_header a:hover {
+    background-color: #2b9e69bb;
+    border-radius: 5px;
+    padding: 7px 10px;
+    font-style: oblique;
 }
 
 .navbar {
@@ -143,13 +144,11 @@ main #titulo_h1{
 main #links-interes{    
     padding: 30px;
     border-radius: 10px;
-    height: 60vh;
+    height: 50vh;
+    background-color:#65b891;
 }
-main section .link-interes  h3{
-    color: chartreuse;
-    float: left;
-    width: 100%;
-}
+
+
 /*agua*/
 main #links-interes .agua{
     background-color:burlywood;
@@ -159,11 +158,13 @@ main #links-interes .agua{
     align-items: center;
     justify-content: center;
 }
-main #links-interes h2{
-    font-size: 7rem;
+main #links-interes .agua h2{
+    font-size: 15vmin;
     position: absolute;
+    font-family: "Work Sans", sans-serif;
 }
-main #links-interes .border{
+
+main #links-interes .agua .border{
     color: black;
     text-shadow:
         -1px -1px 0 white,
@@ -171,10 +172,9 @@ main #links-interes .border{
         1px 1px 0 white,
         -1px 1px 0 white;
 }
-main #links-interes .wave{
+main #links-interes .agua .wave{
     color: #09f;
-    animation: wave 3s ease-in-out infinite;
-    
+    animation: wave 3s ease-in-out infinite;   
 }
 
 @keyframes wave{
