@@ -27,9 +27,6 @@ header {
     z-index: 1000;
 }
 
-
-
-
 header nav .logo_header {
     width: 100%;
     display: flex;
@@ -174,10 +171,10 @@ main #links-interes .agua .border{
 }
 main #links-interes .agua .wave{
     color: #09f;
-    animation: wave 3s ease-in-out infinite;   
+    animation: shift 3s ease-in-out infinite;   
 }
 
-@keyframes wave{
+@keyframes shift{
     0%, 100%{
         clip-path: polygon(
             0% 47%,
