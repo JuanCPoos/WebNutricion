@@ -23,6 +23,7 @@ body {
 header {
     background-color: rgb(13, 109, 90);
     width: 100%;    
+    position:fixed;
     top: 0;
     z-index: 1000;
 }
