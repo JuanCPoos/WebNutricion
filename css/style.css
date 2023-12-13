@@ -50,9 +50,7 @@ header nav .logo_header a:hover {
 main {
     padding-top: 104px;
 }
-main section{
-    margin: 40px
-}
+
 main .img_bienvenida .seccionDos {
     background-color: #fff;
     position: relative;
@@ -108,17 +106,14 @@ main section .sobremi_pages h6{
 }
 
 /* escuelita saludable */
-main section .talleres{
+main .talleres{
     position: relative;        
-}
-main .bg-talleres{
     background-color: #ffc107b8;
-    color: #fff;
 }
+
 main .bg-consultas{
     background-color: #7bac6abb;
-    padding: 40px 0;
-    
+    padding: 40px 0;    
 }
 
 main section .bg-image{
