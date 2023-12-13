@@ -6,7 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["nutrición-infantil", 
+  "alimentación-infantil","infancias","niños","bebes","lactancia-materna",
+  "alimentación-complementaria",
+  "baby-lead-weaning","BLW","introducción-alimentaria","autoalimentación","alimentos-sólidos","desarrollo-infantil","escuelita-saludable","salud-infantil","educación-nutricional","niños-y-adolescentes","hábitos-saludables","aprendizaje-activo","nutricionista",
+  "profesional-de-la-salud","asesoramiento-nutricional","consultas-nutricionales",
+  "plan-de-alimentación","bienestar-infantil","alimentación-familiar","hábitos-alimentarios","salud-familiar","vida-saludable","familia","padres-e-hijos",
+  "educación-nutricional","talleres-nutricionales","charlas-educativas","aprendizaje-saludable","promoción-de-la-salud","prevención-infantil"],
+  "author": "Juan Poos",
   "license": "ISC"
 }
