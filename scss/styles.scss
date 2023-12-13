@@ -1,6 +1,6 @@
 /* Variables */
 $color-bg-section: #ffc107b8;
-$color-bg-section-2: #7bac6abb; 
+$color-bg-section-2: #7bac6abb;
 
 
 header {
@@ -24,7 +24,7 @@ header {
         }
 
         .navbar {
-            padding: 20px 0px;            
+            padding: 20px 0px;
         }
     }
 
@@ -71,14 +71,16 @@ main {
             }
         }
 
-        .talleres{
-            position: relative;        
+        .talleres {
+            position: relative;
             background-color: $color-bg-section;
         }
-        #consultas{
+
+        #consultas {
             background-color: $color-bg-section-2;
             padding: 40px 0;
-            .size-form{
+
+            .size-form {
                 width: 50%;
                 margin: 0 auto;
             }
@@ -97,7 +99,7 @@ main {
 
     #titulo {
 
-        background-color: #b3f79cbb;        
+        background-color: #b3f79cbb;
         box-shadow: 0px 4px 7px rgb(0, 0, 0, .5);
 
         h1 {
@@ -109,4 +111,12 @@ main {
 
     }
 
+}
+
+.creator {
+    padding: 10px 0;
+
+    p {
+        font-size: 6px;
+    }
 }
