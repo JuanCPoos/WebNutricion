@@ -1,0 +1,12 @@
+{
+  "name": "webnutricion",
+  "version": "1.0.0",
+  "description": "Sitio web para una Licenciada en Nutricion creado como parte del proyecto de la carrera de Desarrollo Web en CoderHouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
