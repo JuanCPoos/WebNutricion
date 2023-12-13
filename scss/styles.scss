@@ -1,5 +1,6 @@
 /* Variables */
 $color-bg-section: #ffc107b8;
+$color-bg-section-2: #7bac6abb; 
 
 
 header {
@@ -23,15 +24,14 @@ header {
         }
 
         .navbar {
-            padding: 30px 0px;
-            ;
+            padding: 20px 0px;            
         }
     }
 
 }
 
 main {
-    padding-top: 104px;
+    padding-top: 72px;
 
     section {
         margin: 40px;
@@ -75,6 +75,15 @@ main {
             position: relative;        
             background-color: $color-bg-section;
         }
+        #consultas{
+            background-color: $color-bg-section-2;
+            padding: 40px 0;
+            .size-form{
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+
     }
 
     .img_bienvenida {
@@ -88,13 +97,12 @@ main {
 
     #titulo {
 
-        background-color: #b3f79cbb;
-        align-items: center;
+        background-color: #b3f79cbb;        
         box-shadow: 0px 4px 7px rgb(0, 0, 0, .5);
 
         h1 {
             font-family: 'Rubik', sans-serif;
-            font-weight: 600;
+            font-weight: 400;
             padding: 0;
             margin: 0 auto;
         }
