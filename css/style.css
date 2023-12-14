@@ -229,11 +229,22 @@ footer .newsletter {
     max-width: 450px;
     margin: 0 auto;
 }
+footer .redes-sociales{
+    background-color: #fff;
+}
 
 .creator p{
     font-size: 13px;
 }
-
+.creator a{
+    text-decoration: none;
+    color: #000;
+    
+}
+.creator a:hover{
+    text-decoration:underline;
+    
+}
 
 .blanco{
     width: 100%;
@@ -296,10 +307,7 @@ input {
         text-align: center;
     }
 
-    .redes {
-        padding: 30px 0px;
-        justify-content: space-around;
-    }
+    
 
 }
 
@@ -321,10 +329,7 @@ input {
 }
 /* Tablet */
 @media only screen and (min-width: 501px) and (max-width:960px) {
-    footer .redes{
-        margin: 0 auto;
-        justify-content: center;
-    }
+    
 }
 /****/
 /**/
