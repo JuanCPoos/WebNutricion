@@ -24,6 +24,26 @@ a {
 a:hover {
     color: #2b9e69; 
 }
+
+img {
+    transition: opacity 0.3s ease-in-out;
+}
+
+img:hover {
+    opacity: 0.8;
+}
+
+body .btn-success {
+    transition: background-color 0.6s ease-in-out, border-color 0.6s ease-in-out, color 0.6s ease-in-out;
+}
+
+body .btn-success:hover {
+    background-color: #FFC107; /* Cambia el color al que prefieras */
+    border-color: #FFC107;
+    color: #1d1c1c;
+}
+
+
 /* HEADER */
 
 header {
@@ -110,10 +130,28 @@ main section .sobremi_pages h6{
     margin: 40px 0;
 }
 
+.items_alim_saludable .tarjeta:hover{
+    transition: box-shadow 0.5s ease-in-out ;
+    box-shadow: -4px -4px 6px rgba(255, 193, 5, 0.7);
+}
+.items_alim_saludable .tarjeta-derecha:hover{
+    transition: box-shadow 0.5s ease-in-out ;
+    box-shadow: 4px -4px 6px rgba(255, 193, 5, 0.7);    
+}
+.items_alim_saludable .tarjeta-abajo:hover{
+    transition: box-shadow 0.5s ease-in-out ;
+    box-shadow: -4px 4px 6px rgba(255, 193, 5, 0.7);    
+}
+.items_alim_saludable .tarjeta-derecha-abajo:hover{
+    transition: box-shadow 0.5s ease-in-out ;
+    box-shadow: 4px 4px 6px rgba(255, 193, 5, 0.7); 
+}
+
+
 /* escuelita saludable */
 main .talleres{
     position: relative;        
-    background-color: #ffc107b8;
+    background-color: rgba(255, 193, 5, 0.722);
 }
 
 /* consultas*/
