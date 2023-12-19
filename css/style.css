@@ -1,390 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    display: block;
-}
-
-/*** BODY  ****/
-body {
-    background-color: #F4F3F0;
-    margin: 0;
-    height: 100vh;
-}
-
-a {
-    transition: color 0.3s ease-in-out;
-}
-
-a:hover {
-    color: #2b9e69; 
-}
-
-img {
-    transition: opacity 0.3s ease-in-out;
-}
-
-img:hover {
-    opacity: 0.8;
-}
-
-body .btn-success {
-    transition: background-color 0.6s ease-in-out, border-color 0.6s ease-in-out, color 0.6s ease-in-out;
-}
-
-body .btn-success:hover {
-    background-color: #FFC107; /* Cambia el color al que prefieras */
-    border-color: #FFC107;
-    color: #1d1c1c;
-}
-
-
-/* HEADER */
-
+/* Variables */
 header {
-    background-color: rgb(13, 109, 90);
-    width: 100%;    
-    position:fixed;
-    top: 0;
-    z-index: 1000;
+  background-color: rgb(13, 109, 90);
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
-
 header nav .logo_header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
-header nav .logo_header a:hover {
-    background-color: #2b9e69bb;
-    border-radius: 5px;
-    padding: 7px 10px;
-    font-style: oblique;
+header nav:hover {
+  font-style: oblique;
 }
-
-.navbar {
-    padding: 20px 0px;
+header nav .navbar {
+  padding: 20px 0px;
 }
 
-
-/****  MAIN   ****/
+/* --- main ----*/
 main {
-    padding-top: 72px;
+  padding-top: 72px;
 }
-
-main .img_bienvenida .seccionDos {
-    background-color: #fff;
-    position: relative;
-    top: auto
+main section {
+  margin: 40px;
 }
-
 main section h5 {
-    padding: 5px 0px;
+  padding: 5px 0px;
 }
-
 main section .items_alim_saludable {
-    padding: 30px 40px;
-    background-color: antiquewhite;
+  padding: 30px 40px;
+  background-color: antiquewhite;
 }
-
 main section .zona_videos {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
-    align-items: center;
-    background-color: antiquewhite;
-    padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  background-color: antiquewhite;
+  padding: 20px 0px;
 }
-
+main section .diploma {
+  width: 100%;
+  margin: 0 auto;
+}
+main section .sobremi_pages h6 {
+  background-color: rgb(54, 106, 128);
+  color: #fff;
+  font-weight: 300;
+  padding: 10px 0;
+  text-align: center;
+  margin: 40px 0;
+}
+main section .talleres {
+  position: relative;
+  background-color: rgba(255, 193, 7, 0.7215686275);
+}
+main section #consultas {
+  background-color: rgba(123, 172, 106, 0.7333333333);
+  padding: 40px 0;
+}
+main section #consultas .size-form {
+  width: 50%;
+  margin: 0 auto;
+}
+main .img_bienvenida .seccionDos {
+  background-color: #fff;
+  position: relative;
+  top: auto;
+}
 main #titulo {
-    background-color: #b3f79cbb;    
-    box-shadow: 0px 4px 7px rgb(0, 0, 0, .5);
+  background-color: rgba(179, 247, 156, 0.7333333333);
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5);
 }
-
-
 main #titulo h1 {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-    padding: 0;
-    margin: 0 auto;
-}
-
-/* pages sobremi.html */
-main section .diploma{
-    width: 100%;
-    margin: 0 auto;
-    
-}
-main section .sobremi_pages h6{
-    background-color: rgb(54, 106, 128);     
-    color: #fff;
-    font-weight: 300;    
-    padding: 10px 0;
-    text-align: center;
-    margin: 40px 0;
-}
-
-.items_alim_saludable .tarjeta:hover{
-    transition: box-shadow 0.5s ease-in-out ;
-    box-shadow: -4px -4px 6px rgba(255, 193, 5, 0.7);
-}
-.items_alim_saludable .tarjeta-derecha:hover{
-    transition: box-shadow 0.5s ease-in-out ;
-    box-shadow: 4px -4px 6px rgba(255, 193, 5, 0.7);    
-}
-.items_alim_saludable .tarjeta-abajo:hover{
-    transition: box-shadow 0.5s ease-in-out ;
-    box-shadow: -4px 4px 6px rgba(255, 193, 5, 0.7);    
-}
-.items_alim_saludable .tarjeta-derecha-abajo:hover{
-    transition: box-shadow 0.5s ease-in-out ;
-    box-shadow: 4px 4px 6px rgba(255, 193, 5, 0.7); 
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  padding: 0;
+  margin: 0 auto;
 }
 
 
-/* escuelita saludable */
-main .talleres{
-    position: relative;        
-    background-color: rgba(255, 193, 5, 0.722);
-}
-
-/* consultas*/
-
-main #consultas .size-form {
-    width: 70%;
-    margin: 0 auto;
-}
-
-
-main .bg-consultas{
-    background-color: #7bac6abb;
-    padding: 40px 0;    
-}
-
-main section .bg-image{
-    opacity: 0.4;
-    width:100%;
-}
-
-main .carrousel{
-    background-color:#FFC107;
-    position:initial;
-    top:420px;
-    padding: 30px;
-}
-main #titulo_h1{
-    background-color: rgba(247, 240, 156, 0.700);
-    align-items: center;
-    box-shadow: 0px 4px 7px rgb(0, 0, 0, .5);
-}
-
-/* links interes */
-#links-interes .card {
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-#links-interes .card {
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-#links-interes .card:hover {
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-main #links-interes{    
-    padding: 30px;
-    border-radius: 10px;
-    height: 50vh;
-    background-color:#65b891;
-}
-
-
-/*agua*/
-main #links-interes .agua{
-    background: linear-gradient(135deg, #38d9a9 19%, #65b891 50%, #366a80 90%);
-    display: flex;
-    height: 20vh;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-main #links-interes .agua h2{
-    font-size: 15vmin;
-    position: absolute;
-    font-family: "Work Sans", sans-serif;
-}
-
-main #links-interes .agua .border{
-    color: black;
-    text-shadow:
-        -1px -1px 0 white,
-        1px -1px 0 white,
-        1px 1px 0 white,
-        -1px 1px 0 white;
-}
-main #links-interes .agua .wave{
-    color: #09f;
-    animation: shift 3s ease-in-out infinite;   
-}
-
-@keyframes shift{
-    0%, 100%{
-        clip-path: polygon(
-            0% 47%,
-            10% 48%,
-            33% 54%, 
-            54% 60%,
-            70% 61%,
-            84% 59%,
-            100% 52%,
-            100% 100%,
-            0 100% 
-        );
-    }
-    50% {
-        clip-path: polygon(
-            0% 60%,
-            15% 65%,
-            34% 66%, 
-            67 50%,
-            84% 45%,
-            100% 46%,
-            100% 100%,
-            0% 100% 
-        );
-    }
-}
-
-/* section cuatro */
-main #seccion_cuatro .seccion_cuatro{
-    margin-top: 6rem;
-}
-
-/* FOOTER */
-
+/* --- footer --- */
 footer {
-    background-color: rgb(54, 106, 128);    
-    box-shadow: 0px -4px 7px rgb(0, 0, 0, .5);    
+  background-color: rgb(54, 106, 128);
+  box-shadow: 0px -4px 7px rgba(0, 0, 0, 0.5);
 }
-
-/* navegacion */
-
 footer .classSuscripcion {
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
 }
-
 footer .newsletter {
-    max-width: 450px;
-    margin: 0 auto;
+  max-width: 450px;
+  margin: 0 auto;
 }
-footer .redes-sociales{
-    background-color: #fff;
-}
-
-.creator p{
-    font-size: 13px;
-}
-.creator a{
-    text-decoration: none;
-    color: #000;
-    
-}
-.creator a:hover{
-    text-decoration:underline;
-    
+footer .redes-sociales {
+  background-color: #fff;
 }
 
-.blanco{
-    width: 100%;
-    height: 30px;
-    background-color: #fff;
-}
-
-
-
-
-/* Títulos, subtitulos y párrafos generales */
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
-    width: fit-content;
-    margin: 15px auto;
-    padding: 5px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 300;
-    text-align: justify;
-}
-
-
-/***   ***/
-
-/* FORMULARIO CONTACTO */
-
-input {
-    margin: 5px;
-}
-
-
-/**/
-/****/
-/* DISPOSITIVOS */
-@media only screen and (max-width: 500px) {
-
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-        background-color: rgb(13, 109, 90);
-    }
-
-    header nav {
-        display: block;
-        margin: 0 auto;
-    }
-    main section #titulo {
-        text-align: center; 
-    }
-    main section #titulo h1{
-        text-transform:lowercase;        
-    }
-
-    footer {
-        display: block;
-        text-align: center;
-    }
-
-    
-
-}
-
-@media only screen and (min-width: 961px) and (max-width:1200px) {
-
-    /* acomodar tamaño video */
-    main section .items_alim_saludable {
-        padding: 10px 7px;
-        background-color: antiquewhite;
-    }
-
-}
-@media only screen and (max-width:960px) {
-    main section #titulo h1 {
-        font-size: 30px;
-        font-weight: 300;
-    }
-
-}
-/* Tablet */
-@media only screen and (min-width: 501px) and (max-width:960px) {
-    
-}
-/****/
-/**/
+/*# sourceMappingURL=style.css.map */

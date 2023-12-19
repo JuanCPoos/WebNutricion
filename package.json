@@ -4,9 +4,11 @@
   "description": "Sitio web para una Licenciada en Nutricion creado como parte del proyecto de la carrera de Desarrollo Web en CoderHouse",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./scss/styles.scss ./css/style.css"
+
   },
-  "keywords": ["nutrición-infantil", 
+    "keywords": ["nutrición-infantil", 
   "alimentación-infantil","infancias","niños","bebes","lactancia-materna",
   "alimentación-complementaria",
   "baby-lead-weaning","BLW","introducción-alimentaria","autoalimentación","alimentos-sólidos","desarrollo-infantil","escuelita-saludable","salud-infantil","educación-nutricional","niños-y-adolescentes","hábitos-saludables","aprendizaje-activo","nutricionista",
@@ -15,4 +17,5 @@
   "educación-nutricional","talleres-nutricionales","charlas-educativas","aprendizaje-saludable","promoción-de-la-salud","prevención-infantil"],
   "author": "Juan Poos",
   "license": "ISC"
+  
 }
