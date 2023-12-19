@@ -3,3 +3,6 @@ img_cache
 
 #Ignora archivos de texto
 .txt
+
+#Ignora archivo node_modules
+/node_modules

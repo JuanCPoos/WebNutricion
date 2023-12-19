@@ -17,7 +17,13 @@ body {
     height: 100vh;
 }
 
+a {
+    transition: color 0.3s ease-in-out;
+}
 
+a:hover {
+    color: #2b9e69; 
+}
 /* HEADER */
 
 header {
@@ -141,6 +147,17 @@ main #titulo_h1{
 }
 
 /* links interes */
+#links-interes .card {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+#links-interes .card {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#links-interes .card:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
 main #links-interes{    
     padding: 30px;
     border-radius: 10px;
