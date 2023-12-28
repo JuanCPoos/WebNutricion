@@ -16,8 +16,8 @@ header nav .logo_header {
   display: flex;
   justify-content: space-between;
 }
-header nav:hover {
-  font-style: oblique;
+header nav .logo_header a {
+  font-size: 25px;
 }
 header nav .navbar {
   padding: 20px 0px;
@@ -139,29 +139,16 @@ footer .redes-sociales {
 
 /**************************************/
 /* MEDIA QUERIES */
-@media only screen and (max-width: 420px) {
-  header nav .logo_header {
-    margin-right: 30px;
-  }
-  header nav .logo_header a {
-    color: transparent;
-  }
-  header navhover {
-    font-style: none;
-  }
+@media only screen and (max-width: 450px) {
   main #titulo h1 {
     padding: 0 10px;
     font-size: 2em;
   }
 }
-@media only screen and (min-width: 421px), (max-width: 575px) {
+@media only screen and (max-width: 766px) {
   header nav .logo_header {
     padding: 0 10px;
     justify-content: space-around;
-  }
-  header nav .logo_header a {
-    font-size: 1em;
-    padding-left: 1em;
   }
 }
 /* Ejemplo de Media Query para pantallas más pequeñas (dispositivos móviles) */
@@ -170,7 +157,7 @@ footer .redes-sociales {
     justify-content: space-between;
   }
   header nav .logo_header a {
-    font-size: 1.3em;
+    font-size: 1.3rem;
     padding-left: 1em;
   }
 }
