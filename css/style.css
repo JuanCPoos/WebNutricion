@@ -1,4 +1,10 @@
+@charset "UTF-8";
 /* Variables */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 header {
   background-color: rgb(13, 109, 90);
   width: 100%;
@@ -99,6 +105,7 @@ main #titulo h1 {
   font-weight: 400;
   padding: 0;
   margin: 0 auto;
+  font-size: 2em;
 }
 
 /* --- footer --- */
@@ -129,5 +136,51 @@ footer .redes-sociales {
   text-decoration: none;
   color: #000;
 }
+
+/**************************************/
+/* MEDIA QUERIES */
+@media only screen and (max-width: 420px) {
+  header nav .logo_header {
+    margin-right: 30px;
+  }
+  header nav .logo_header a {
+    color: transparent;
+  }
+  header navhover {
+    font-style: none;
+  }
+  main #titulo h1 {
+    padding: 0 10px;
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width: 421px), (max-width: 575px) {
+  header nav .logo_header {
+    padding: 0 10px;
+    justify-content: space-around;
+  }
+  header nav .logo_header a {
+    font-size: 1em;
+    padding-left: 1em;
+  }
+}
+/* Ejemplo de Media Query para pantallas más pequeñas (dispositivos móviles) */
+@media only screen and (max-width: 767px) {
+  header nav .logo_header {
+    justify-content: space-between;
+  }
+  header nav .logo_header a {
+    font-size: 1.3em;
+    padding-left: 1em;
+  }
+}
+/* Ejemplo de Media Query para tabletas y pantallas medianas */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  main .talleres {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* Ejemplo de Media Query para pantallas más grandes */
 
 /*# sourceMappingURL=style.css.map */
