@@ -103,7 +103,7 @@ main #id-404 .box404 a:hover {
   text-decoration: underline;
   color: rgb(33, 33, 146);
   font-size: 0.95em;
-  transition: text-decoration 1s;
+  transition: all 2s;
 }
 main #definiciones {
   /* pages destacados.html - video */
