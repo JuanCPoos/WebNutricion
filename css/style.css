@@ -103,6 +103,7 @@ main #id-404 .box404 a:hover {
   text-decoration: underline;
   color: rgb(33, 33, 146);
   font-size: 0.95em;
+  transition: text-decoration 1s;
 }
 main #definiciones {
   /* pages destacados.html - video */
@@ -151,8 +152,8 @@ footer .newsletter {
   max-width: 450px;
   margin: 0 auto;
 }
-footer .redes-sociales {
-  background-color: #fff;
+footer .redes-sociales ul li {
+  text-decoration: none;
 }
 
 .creator p {

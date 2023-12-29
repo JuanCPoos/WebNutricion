@@ -126,6 +126,7 @@ main {
                     text-decoration:underline;
                     color: rgb(33, 33, 146);
                     font-size: 0.950em;
+                    transition: text-decoration 1s; 
                 }
             }
             
@@ -202,7 +203,13 @@ footer {
     }
 
     .redes-sociales {
-        background-color: #fff;
+        ul{
+            li{
+                text-decoration: none;
+            }
+            
+        }
+            
     }
 }
 
