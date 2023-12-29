@@ -1,6 +1,7 @@
 /* Variables */
 $color-bg-section: #ffc107b8;
 $color-bg-section-2: #7bac6abb;
+$color-bg-box404: #ffc107;
 
 img{
     max-width: 100%;
@@ -100,6 +101,37 @@ main {
 
 
     }
+    #id-404{
+        display: flex;        
+        justify-content: center;
+        align-items: center;
+        .box404{                
+            margin: 30px 0; 
+            padding: 30px;
+            background-color: $color-bg-box404;
+            border-radius: 10px;
+            box-shadow: 4px 4px 10px rgb(0, 0, 0, .3);
+            max-width: 545px;
+            h1{
+                font-size: 9em;
+            }
+            h1, h3{
+                color: #fff;
+            }
+            a{            
+                text-decoration: none;
+                color: #000;
+                font-size: 0.9em;
+                &:hover{
+                    text-decoration:underline;
+                    color: rgb(33, 33, 146);
+                    font-size: 0.950em;
+                }
+            }
+            
+        }
+    }
+    
 
     #definiciones {
         /* pages destacados.html - video */
