@@ -2,8 +2,9 @@
 $color-bg-section: #ffc107b8;
 $color-bg-section-2: #7bac6abb;
 $color-bg-box404: #ffc107;
+.white-with
 
-img{
+img {
     max-width: 100%;
     height: auto;
 }
@@ -18,11 +19,12 @@ header {
         .logo_header {
             width: 100%;
             display: flex;
-            justify-content: space-between;            
-            a{
+            justify-content: space-between;
+
+            a {
                 font-size: 25px;
             }
-        }      
+        }
 
 
         .navbar {
@@ -101,38 +103,45 @@ main {
 
 
     }
-    #id-404{
-        display: flex;        
+
+    #id-404 {
+        display: flex;
         justify-content: center;
         align-items: center;
-        .box404{                
-            margin: 30px 0; 
+
+        .box404 {
+            margin: 30px 0;
             padding: 30px;
             background-color: $color-bg-box404;
             border-radius: 10px;
             box-shadow: 4px 4px 10px rgb(0, 0, 0, .3);
             max-width: 545px;
-            h1{
+
+            h1 {
                 font-size: 9em;
             }
-            h1, h3{
+
+            h1,
+            h3 {
                 color: #fff;
             }
-            a{            
+
+            a {
                 text-decoration: none;
                 color: #000;
                 font-size: 0.9em;
-                &:hover{
-                    text-decoration:underline;
+
+                &:hover {
+                    text-decoration: underline;
                     color: rgb(33, 33, 146);
                     font-size: 0.950em;
-                    transition: all 2s; 
+                    transition: all 2s;
                 }
             }
-            
+
         }
     }
-    
+
 
     #definiciones {
         /* pages destacados.html - video */
@@ -175,7 +184,7 @@ main {
             font-weight: 400;
             padding: 0;
             margin: 0 auto;
-            font-size: 2em;            
+            font-size: 2em;
         }
 
     }
@@ -202,14 +211,14 @@ footer {
         margin: 0 auto;
     }
 
-    .redes-sociales {
-        ul{
-            li{
-                text-decoration: none;
-            }
-            
+  ul{
+    list-style: none;
+    padding: 0;
+        li {
+            text-decoration: none;
+            display: inline;
+            margin: 10px;
         }
-            
     }
 }
 
@@ -219,7 +228,7 @@ footer {
     p {
         font-size: 13px;
         text-align: center;
-        margin-bottom:0;
+        margin-bottom: 0;
         padding: 5px 0;
     }
 
@@ -233,19 +242,17 @@ footer {
 /**************************************/
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 450px){
-    header{
-        nav{
-            .logo_header{
-                
-                
-            }
-          
+@media only screen and (max-width: 450px) {
+    header {
+        nav {
+            .logo_header {}
+
         }
     }
-    main{
-        #titulo{
-            h1{
+
+    main {
+        #titulo {
+            h1 {
                 padding: 0 10px;
                 font-size: 2em;
             }
@@ -253,53 +260,58 @@ footer {
     }
 }
 
-@media only screen and (max-width: 766px){
-    header{
-        
-        nav{
-            .logo_header{
+@media only screen and (max-width: 766px) {
+    header {
+
+        nav {
+            .logo_header {
                 padding: 0 10px;
                 justify-content: space-around;
-               
+
             }
 
         }
     }
-    
+
 }
 
 /* Ejemplo de Media Query para pantallas más pequeñas (dispositivos móviles) */
 @media only screen and (max-width: 767px) {
-    header{
-        
-        nav{
-            .logo_header{
+    header {
+
+        nav {
+            .logo_header {
                 justify-content: space-between;
-                a{
+
+                a {
                     font-size: 1.3rem;
                     padding-left: 1em;
                 }
-            
+
             }
 
         }
     }
-  }
-  
-  /* Ejemplo de Media Query para tabletas y pantallas medianas */
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    main{
+    footer{
+        h3{
+            margin: 20px;
+        }
+    }
+}
 
-        .talleres{
+/* Ejemplo de Media Query para tabletas y pantallas medianas */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    main {
+
+        .talleres {
             display: flex;
             flex-direction: column;
 
         }
     }
-  }
-  
-  /* Ejemplo de Media Query para pantallas más grandes */
-  @media only screen and (min-width: 992px) {
+}
+
+/* Ejemplo de Media Query para pantallas más grandes */
+@media only screen and (min-width: 992px) {
     // Tus ajustes para pantallas más grandes aquí
-  }
-  
+}
