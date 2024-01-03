@@ -1,10 +1,11 @@
 @charset "UTF-8";
 /* Variables */
-.white-with img {
+img {
   max-width: 100%;
   height: auto;
 }
 
+/* --- header --- */
 header {
   background-color: rgb(13, 109, 90);
   width: 100%;
@@ -26,6 +27,17 @@ header nav .navbar {
 /* --- main ----*/
 main {
   padding-top: 72px;
+}
+main p strong-animar {
+  color: #000;
+}
+main p:hover {
+  color: rgba(13, 13, 60, 0.756);
+  font-size: 1.02em;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  padding: 50px 100px;
+  transition: all 0.8s;
 }
 main section {
   margin: 40px;
@@ -127,16 +139,23 @@ main .img_bienvenida .seccionDos {
   position: relative;
   top: auto;
 }
-main #titulo {
-  background-color: rgba(179, 247, 156, 0.7333333333);
+main #titulo_h1 {
+  background-color: rgba(215, 246, 204, 0.7333333333);
   box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5);
 }
-main #titulo h1 {
+main #titulo_h1 h1 {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   padding: 0;
   margin: 0 auto;
   font-size: 2em;
+}
+main .bienvenida h4 {
+  text-align: start;
+}
+main .bienvenida :hover {
+  text-align: center;
+  transition: all 0.8s;
 }
 
 /* --- footer --- */
