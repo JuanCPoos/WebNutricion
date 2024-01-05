@@ -83,11 +83,11 @@ main section #video .video-container iframe {
   width: 100%;
   height: 100%;
 }
-main #talleres .bg-talleres :hover {
+main #talleres .bg-talleres:hover {
   background-color: #05255c;
   border-radius: 10px;
   color: #fff;
-  transition: all 1.5s;
+  transition: background-color 1.5s;
 }
 main #consultas {
   width: 100%;
@@ -99,7 +99,7 @@ main #consultas .size-form {
   width: 50%;
   margin: 0 auto;
 }
-main #consultas :hover {
+main #consultas:hover {
   background-color: rgba(123, 172, 106, 0.7333333333);
   border-top-right-radius: 12px;
   border-bottom-right-radius: 45px;
@@ -217,7 +217,6 @@ footer ul li {
   color: #05255c;
 }
 .creator :hover {
-  font-weight: 600;
   transition: all 1s;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
@@ -253,6 +252,9 @@ footer ul li {
   }
   main .talleres .bg-talleres div {
     margin-bottom: 20px;
+  }
+  main .talleres .bg-talleres h2 {
+    color: rgba(255, 193, 7, 0.7215686275);
   }
   /* footer */
   footer h3 {
