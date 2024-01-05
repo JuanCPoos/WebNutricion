@@ -27,17 +27,25 @@ header nav .navbar {
 /* --- main ----*/
 main {
   padding-top: 72px;
+  /*pages destacados.html*/
+  /*  talleres  */
+  /* consultas*/
 }
-main p strong-animar {
+main .bienvenida p strong-animar {
   color: #000;
 }
-main p:hover {
+main .bienvenida p:hover {
   color: rgba(13, 13, 60, 0.756);
   font-size: 1.02em;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
   border-radius: 7px;
   padding: 50px 100px;
   transition: all 0.8s;
+}
+main #titulo h1 {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  font-size: 3em;
+  font-weight: 700;
 }
 main section {
   margin: 40px;
@@ -61,18 +69,6 @@ main section .sobremi_pages h6 {
   text-align: center;
   margin: 40px 0;
 }
-main section .talleres {
-  position: relative;
-  background-color: rgba(255, 193, 7, 0.7215686275);
-}
-main section #consultas {
-  background-color: rgba(123, 172, 106, 0.7333333333);
-  padding: 40px 0;
-}
-main section #consultas .size-form {
-  width: 50%;
-  margin: 0 auto;
-}
 main section #video .video-container {
   position: relative;
   width: 100%;
@@ -86,6 +82,29 @@ main section #video .video-container iframe {
   left: 0;
   width: 100%;
   height: 100%;
+}
+main #talleres .bg-talleres :hover {
+  background-color: #05255c;
+  border-radius: 10px;
+  color: #fff;
+  transition: all 1.5s;
+}
+main #consultas {
+  background-color: rgba(123, 172, 106, 0.7333333333);
+  padding: 40px 0;
+}
+main #consultas .size-form {
+  width: 50%;
+  margin: 0 auto;
+}
+main #consultas :hover {
+  background-color: rgba(123, 172, 106, 0.7333333333);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+main #consultas:hover {
+  background-color: transparent;
+  transition: 0.5s;
 }
 main #id-404 {
   display: flex;
@@ -162,6 +181,7 @@ main .bienvenida :hover {
 footer {
   background-color: rgb(54, 106, 128);
   box-shadow: 0px -4px 7px rgba(0, 0, 0, 0.5);
+  color: #f5f4f4;
 }
 footer .classSuscripcion {
   margin: 0 auto;
@@ -183,14 +203,20 @@ footer ul li {
 }
 
 .creator p {
-  font-size: 13px;
+  font-size: 0.8em;
   text-align: center;
   margin-bottom: 0;
-  padding: 5px 0;
+  padding: 15px 0;
+  color: #05255c;
 }
 .creator a {
   text-decoration: none;
-  color: #000;
+  color: #05255c;
+}
+.creator :hover {
+  font-weight: 600;
+  transition: all 1s;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 /**************************************/
@@ -216,6 +242,16 @@ footer ul li {
     font-size: 1.3rem;
     padding-left: 1em;
   }
+  /* main */
+  main .talleres {
+    display: block;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  main .talleres .bg-talleres div {
+    margin-bottom: 20px;
+  }
+  /* footer */
   footer h3 {
     margin: 20px;
   }
