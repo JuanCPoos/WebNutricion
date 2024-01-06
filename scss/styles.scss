@@ -2,6 +2,7 @@
 $color-bg-section: #ffc107b8;
 $color-bg-section-2: #7bac6abb;
 $color-bg-box404: #ffc107;
+$transition-duration: 0.5s;
 
 
 
@@ -39,9 +40,14 @@ header {
 /* --- main ----*/
 main {
     padding-top: 72px;
-    h2{
+    h1{
+        
+        
+    }
+    h2 {
         letter-spacing: 2px;
     }
+
     .bienvenida {
         p {
             strong-animar {
@@ -58,15 +64,21 @@ main {
             }
         }
     }
+
     /* index.html */
-    #seccion-nutricion{
-        h5{
+    #seccion-nutricion {
+        h5 {
+            margin: 0 auto;
+
             width: fit-content;
-            background-color: rgba(255, 193, 7, 0.679);
-            :hover{
-                box-shadow: 2px 2px 8px rgba(255, 193, 7, 0.883);
+            background-color: rgba(255, 193, 7, 0.6);
+
+            &:hover {
+                box-shadow: 2px 2px 8px rgba(137, 104, 7, 0.883);
+                transition: all 0.8s;
             }
         }
+
     }
 
 
@@ -144,17 +156,17 @@ main {
             margin: 0 auto;
             padding: 20px;
             background-color: #05255c;
-                border-top-left-radius: 200px;
-                border-bottom-right-radius: 100px;
-                box-shadow: 2px 4px 10px rgba(10, 92, 76, 0.903);
-                color: #fff;
-                transition:
+            border-top-left-radius: 200px;
+            border-bottom-right-radius: 100px;
+            box-shadow: 2px 4px 10px rgba(10, 92, 76, 0.903);
+            color: #fff;
+            transition:
                 background-color 1.5s ease-in-out,
                 box-shadow 2s ease-in-out,
                 border-top-left-radius 0.5s ease-in-out,
                 border-bottom-right-radius 0.8s ease-in-out;
-            
-            
+
+
         }
 
     }
@@ -180,12 +192,13 @@ main {
                 padding: 50px;
                 box-shadow: 2px 2px 10px rgba(13, 13, 60, 0.756);
                 transition:
-                background-color 0.7s ease-in-out,
-                box-shadow 3s ease-in-out,
-                padding 1.5s ease-in-out,
-                border-top-right-radius 1.7s ease-in-out, border-bottom-left-radius 1.6s ease-in-out;
+                    background-color 0.7s ease-in-out,
+                    box-shadow 3s ease-in-out,
+                    padding 1.5s ease-in-out,
+                    border-top-right-radius 1.7s ease-in-out, border-bottom-left-radius 1.6s ease-in-out;
             }
-            h2{
+
+            h2 {
                 letter-spacing: 2px;
             }
         }
@@ -194,19 +207,58 @@ main {
 
         /*por que el hover se replica en los elementos internos?? */
     }
-
-    #recetas{
-        h2{
+    /* recetas */
+    #recetas {
+        h2 {
             padding: 10px;
             border-left: solid 2px rgb(13, 109, 90);
-            &:hover{
+
+            &:hover {
                 letter-spacing: 2px;
                 padding: 60px;
                 border-left: solid 600px rgba(13, 109, 90, 0.842);
                 transition: all 1s ease-in-out;
-            }   
+            }
         }
     }
+
+    /* links interes */
+
+    #links-interes{
+        display: flex;
+        justify-content: space-between;
+        .card-body{
+            
+            transition: transform $transition-duration ease-in-out;
+            box-shadow:  4px 4px 8px rgba(13, 13, 60, 0.756);
+            background: linear-gradient(to bottom, #87CEEB, #4F94CD);
+            &:hover {
+                transform: translateX(20px);
+              }
+          
+              &:nth-child(2):hover {
+                transform: translateX(-20px);
+              }
+          
+              &:nth-child(3):hover {
+                transform: translateY(20px);
+              }
+          
+              &:nth-child(4):hover {
+                transform: translateY(-20px);
+              }
+            }
+            .card{
+                border: none;                
+            }
+            h5{
+                color: #fff;
+            }
+        }
+            
+    }
+    
+
 
 
     #id-404 {
@@ -308,7 +360,7 @@ main {
     }
 
 
-}
+
 
 
 
@@ -428,15 +480,18 @@ footer {
             .bg-talleres {
                 div {
                     margin-bottom: 20px;
-                    
+
                 }
-                h2{
-                    background-color: #fff;                    
+
+                h2 {
+                    background-color: #fff;
                     padding: 5px;
-                    
-                }   &:hover{
+
+                }
+
+                &:hover {
                     color: #05255c;
-                }         
+                }
 
             }
 
@@ -461,7 +516,7 @@ footer {
         .talleres {
             display: flex;
             flex-direction: column;
-          
+
         }
     }
 }

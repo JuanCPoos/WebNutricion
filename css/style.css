@@ -31,6 +31,8 @@ main {
   /*pages destacados.html*/
   /*  talleres  */
   /* consultas*/
+  /* recetas */
+  /* links interes */
 }
 main h2 {
   letter-spacing: 2px;
@@ -47,11 +49,13 @@ main .bienvenida p:hover {
   transition: all 0.8s;
 }
 main #seccion-nutricion h5 {
+  margin: 0 auto;
   width: fit-content;
-  background-color: rgba(255, 193, 7, 0.679);
+  background-color: rgba(255, 193, 7, 0.6);
 }
-main #seccion-nutricion h5 :hover {
-  box-shadow: 2px 2px 8px rgba(255, 193, 7, 0.883);
+main #seccion-nutricion h5:hover {
+  box-shadow: 2px 2px 8px rgba(137, 104, 7, 0.883);
+  transition: all 0.8s;
 }
 main #titulo h1 {
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
@@ -138,12 +142,40 @@ main #recetas h2:hover {
   border-left: solid 600px rgba(13, 109, 90, 0.842);
   transition: all 1s ease-in-out;
 }
-main #id-404 {
+main #links-interes {
+  display: flex;
+  justify-content: space-between;
+}
+main #links-interes .card-body {
+  transition: transform 0.5s ease-in-out;
+  box-shadow: 4px 4px 8px rgba(13, 13, 60, 0.756);
+  background: linear-gradient(to bottom, #87CEEB, #4F94CD);
+}
+main #links-interes .card-body:hover {
+  transform: translateX(20px);
+}
+main #links-interes .card-body:nth-child(2):hover {
+  transform: translateX(-20px);
+}
+main #links-interes .card-body:nth-child(3):hover {
+  transform: translateY(20px);
+}
+main #links-interes .card-body:nth-child(4):hover {
+  transform: translateY(-20px);
+}
+main #links-interes .card {
+  border: none;
+}
+main #links-interes h5 {
+  color: #fff;
+}
+
+#id-404 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main #id-404 .box404 {
+#id-404 .box404 {
   margin: 30px 0;
   padding: 30px;
   background-color: #ffc107;
@@ -151,60 +183,64 @@ main #id-404 .box404 {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
   max-width: 545px;
 }
-main #id-404 .box404 h1 {
+#id-404 .box404 h1 {
   font-size: 9em;
 }
-main #id-404 .box404 h1,
-main #id-404 .box404 h3 {
+#id-404 .box404 h1,
+#id-404 .box404 h3 {
   color: #fff;
 }
-main #id-404 .box404 a {
+#id-404 .box404 a {
   text-decoration: none;
   color: #000;
   font-size: 0.9em;
 }
-main #id-404 .box404 a:hover {
+#id-404 .box404 a:hover {
   text-decoration: underline;
   color: rgb(33, 33, 146);
   font-size: 0.95em;
   transition: all 2s;
 }
-main #definiciones {
+
+#definiciones {
   /* pages destacados.html - video */
   display: block;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
 }
-main #definiciones .definiciones {
+#definiciones .definiciones {
   background-color: rgb(54, 107, 129);
 }
-main #definiciones .definiciones p {
+#definiciones .definiciones p {
   text-align: justify;
 }
-main #definiciones .definiciones img {
+#definiciones .definiciones img {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-main .img_bienvenida .seccionDos {
+
+.img_bienvenida .seccionDos {
   background-color: #fff;
   position: relative;
   top: auto;
 }
-main #titulo_h1 {
+
+#titulo_h1 {
   background-color: rgba(215, 246, 204, 0.7333333333);
   box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5);
 }
-main #titulo_h1 h1 {
+#titulo_h1 h1 {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   padding: 0;
   margin: 0 auto;
   font-size: 2em;
 }
-main .bienvenida h4 {
+
+.bienvenida h4 {
   text-align: start;
 }
-main .bienvenida :hover {
+.bienvenida :hover {
   text-align: center;
   transition: all 0.8s;
 }
