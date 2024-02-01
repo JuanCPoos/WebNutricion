@@ -14,6 +14,7 @@ header {
 }
 header nav .logo_header {
   width: 100%;
+  height: 70px;
   display: flex;
   justify-content: space-between;
 }
@@ -26,13 +27,66 @@ header nav .navbar {
 
 /* --- main ----*/
 main {
-  padding-top: 72px;
+  height: 100vh;
   /* index.html */
   /*pages destacados.html*/
   /*  talleres  */
   /* consultas*/
   /* recetas */
   /* links interes */
+}
+main .banner {
+  background-color: #2d9c79;
+  padding: 4em 0rem;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.883);
+}
+main a img:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+main .conocenos {
+  padding: 0px 0.7em;
+  background-color: rgba(255, 255, 255, 0.282);
+  color: #2d9c79;
+}
+main .conocenos h3 {
+  padding: 0.3em 0em;
+  border-top: 1px solid #2d9c79;
+  border-bottom: 1px solid #2d9c79;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+main .conocenos p {
+  width: 60%;
+  padding-top: 0.6em;
+  letter-spacing: 0.04em;
+  font-size: 0.8em;
+}
+main .conocenos .leer-mas {
+  background-color: transparent;
+  border: 1px solid #2d9c79;
+  border-radius: 10px;
+  padding: 7px 15px;
+  font-size: 0.9em;
+}
+main .conocenos .truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Número de líneas a mostrar */
+  -webkit-box-orient: vertical;
+}
+main .conocenos .more {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+main .conocenos .expanded {
+  -webkit-line-clamp: unset;
 }
 main h2 {
   letter-spacing: 2px;
@@ -61,6 +115,7 @@ main #titulo h1 {
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
   font-size: 3em;
   font-weight: 700;
+  background-color: #ff9933;
 }
 main section {
   margin: 40px;
@@ -120,7 +175,7 @@ main #consultas .size-form {
   margin: 0 auto;
 }
 main #consultas .bg-consultas:hover {
-  background-color: rgba(123, 172, 106, 0.7333333333);
+  background-color: #2d9c79;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 45px;
   border-bottom-left-radius: 270px;
@@ -219,6 +274,13 @@ main #links-interes h5 {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
+.img_bienvenida {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.756);
+}
+.img_bienvenida:hover {
+  transform: scale(1.025);
+  transition: transform 0.5s ease-out;
+}
 .img_bienvenida .seccionDos {
   background-color: #fff;
   position: relative;
@@ -249,7 +311,6 @@ main #links-interes h5 {
 footer {
   background-color: rgb(54, 106, 128);
   box-shadow: 0px -4px 7px rgba(0, 0, 0, 0.5);
-  color: #f5f4f4;
 }
 footer .classSuscripcion {
   margin: 0 auto;

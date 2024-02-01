@@ -1,6 +1,7 @@
 /* Variables */
 $color-bg-section: #ffc107b8;
-$color-bg-section-2: #7bac6abb;
+$color-bg-section-hsla: rgba(255, 255, 255, 0.282);
+$color-bg-section-2: #2d9c79;
 $color-bg-box404: #ffc107;
 $transition-duration: 0.5s;
 
@@ -21,6 +22,7 @@ header {
     nav {
         .logo_header {
             width: 100%;
+            height: 70px;
             display: flex;
             justify-content: space-between;
 
@@ -38,9 +40,74 @@ header {
 }
 
 /* --- main ----*/
-main {
-    padding-top: 72px;
+main {        
+    height: 100vh;
+
+    .banner{
+        background-color: $color-bg-section-2;    
+        padding: 4em 0rem;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.883);
+    }
+    a{
+        img{
+            &:hover{
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -o-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                transform: scale(1.1);
+                transition: all 0.5s;                
+            }
+        }
+    }
     
+    .conocenos{
+        padding: 0px 0.7em;        
+        background-color: $color-bg-section-hsla;
+        //text-shadow: 0.6px 1px 1px rgba(0, 0, 0, 0.525);
+        color: $color-bg-section-2;
+        
+        h3{
+            padding: .3em 0em;
+            border-top: 1px solid $color-bg-section-2;
+            border-bottom: 1px solid $color-bg-section-2;            
+            font-weight: 600;
+            letter-spacing: .1em;
+        }
+        p{
+            width: 60%;
+            padding-top: 0.6em;
+            letter-spacing: 0.04em;
+            font-size: .8em;
+        }
+        //boton//
+        .leer-mas{
+            background-color: transparent;
+            border: 1px solid $color-bg-section-2;
+            border-radius: 10px;
+            padding: 7px 15px;
+            font-size: .9em;
+
+        }
+        .truncate {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2; /* Número de líneas a mostrar */
+            -webkit-box-orient: vertical;
+        }
+        
+        .more {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+        .expanded {
+            -webkit-line-clamp: unset;
+        }
+        
+
+    }
     h2 {
         letter-spacing: 2px;
     }
@@ -205,6 +272,7 @@ main {
 
         /*por que el hover se replica en los elementos internos?? */
     }
+
     /* recetas */
     #recetas {
         h2 {
@@ -222,140 +290,151 @@ main {
 
     /* links interes */
 
-    #links-interes{
+    #links-interes {
         display: flex;
         justify-content: space-between;
-        .card-body{
-            
+
+        .card-body {
+
             transition: transform $transition-duration ease-in-out;
-            box-shadow:  4px 4px 8px rgba(13, 13, 60, 0.756);
+            box-shadow: 4px 4px 8px rgba(13, 13, 60, 0.756);
             background: linear-gradient(to bottom, #87CEEB, #4F94CD);
+
             &:hover {
                 transform: translateX(20px);
-              }
-          
-              &:nth-child(2):hover {
+            }
+
+            &:nth-child(2):hover {
                 transform: translateX(-20px);
-              }
-          
-              &:nth-child(3):hover {
+            }
+
+            &:nth-child(3):hover {
                 transform: translateY(20px);
-              }
-          
-              &:nth-child(4):hover {
+            }
+
+            &:nth-child(4):hover {
                 transform: translateY(-20px);
-              }
-            }
-            .card{
-                border: none;                
-            }
-            h5{
-                color: #fff;
-            }
-        }
-            
-    }
-    
-
-
-
-    #id-404 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .box404 {
-            margin: 30px 0;
-            padding: 30px;
-            background-color: $color-bg-box404;
-            border-radius: 10px;
-            box-shadow: 4px 4px 10px rgb(0, 0, 0, .3);
-            max-width: 545px;
-
-            h1 {
-                font-size: 9em;
-            }
-
-            h1,
-            h3 {
-                color: #fff;
-            }
-
-            a {
-                text-decoration: none;
-                color: #000;
-                font-size: 0.9em;
-
-                &:hover {
-                    text-decoration: underline;
-                    color: rgb(33, 33, 146);
-                    font-size: 0.950em;
-                    transition: all 2s;
-                }
-            }
-
-        }
-    }
-
-
-    #definiciones {
-        /* pages destacados.html - video */
-        display: block;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
-
-        .definiciones {
-            background-color: rgb(54, 107, 129);
-
-            p {
-                text-align: justify;
-            }
-
-            img {
-                box-shadow: 2px 2px 2px rgb(0, 0, 0, .5);
             }
         }
 
+        .card {
+            border: none;
+        }
 
-    }
-
-    .img_bienvenida {
-
-        .seccionDos {
-            background-color: #fff;
-            position: relative;
-            top: auto
+        h5 {
+            color: #fff;
         }
     }
 
-    #titulo_h1 {
-        background-color: #d7f6ccbb;
-        box-shadow: 0px 4px 7px rgb(0, 0, 0, .5);
+}
+
+
+
+
+#id-404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .box404 {
+        margin: 30px 0;
+        padding: 30px;
+        background-color: $color-bg-box404;
+        border-radius: 10px;
+        box-shadow: 4px 4px 10px rgb(0, 0, 0, .3);
+        max-width: 545px;
 
         h1 {
-            font-family: 'Rubik', sans-serif;
-            font-weight: 400;
-            padding: 0;
-            margin: 0 auto;
-            font-size: 2em;
-
+            font-size: 9em;
         }
 
+        h1,
+        h3 {
+            color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            font-size: 0.9em;
+
+            &:hover {
+                text-decoration: underline;
+                color: rgb(33, 33, 146);
+                font-size: 0.950em;
+                transition: all 2s;
+            }
+        }
+
+    }
+}
+
+
+#definiciones {
+    /* pages destacados.html - video */
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+
+    .definiciones {
+        background-color: rgb(54, 107, 129);
+
+        p {
+            text-align: justify;
+        }
+
+        img {
+            box-shadow: 2px 2px 2px rgb(0, 0, 0, .5);
+        }
+    }
+
+
+}
+
+.img_bienvenida {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.756);
+
+    &:hover {
+        transform: scale(1.025);
+        transition: transform 0.5s ease-out;
+    }
+
+    .seccionDos {
+        background-color: #fff;
+        position: relative;
+        top: auto
+    }
+
+}
+
+#titulo_h1 {
+    background-color: #d7f6ccbb;
+    box-shadow: 0px 4px 7px rgb(0, 0, 0, .5);
+
+    h1 {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        padding: 0;
+        margin: 0 auto;
+        font-size: 2em;
 
     }
 
-    .bienvenida {
-        h4 {
-            text-align: start;
-        }
 
-        :hover {
-            text-align: center;
-            transition: all 0.8s;
+}
 
-        }
+.bienvenida {
+    h4 {
+        text-align: start;
     }
+
+    :hover {
+        text-align: center;
+        transition: all 0.8s;
+
+    }
+}
 
 
 
@@ -367,8 +446,6 @@ main {
 footer {
     background-color: rgb(54, 106, 128);
     box-shadow: 0px -4px 7px rgb(0, 0, 0, .5);
-    color: #f5f4f4;
-
     .classSuscripcion {
         margin: 0 auto;
         align-items: center;
@@ -391,6 +468,9 @@ footer {
         }
     }
 }
+    
+    
+
 
 
 .creator {
@@ -419,13 +499,6 @@ footer {
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 450px) {
-    header {
-        nav {
-            .logo_header {}
-
-        }
-    }
-
     main {
         #titulo {
             h1 {
