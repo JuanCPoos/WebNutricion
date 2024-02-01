@@ -40,293 +40,269 @@ header {
 }
 
 /* --- main ----*/
-main {        
-    height: 100vh;
+#wrapper{
+    min-height: 100%;
+    position: relative;
 
-    .banner{
-        background-color: $color-bg-section-2;    
-        padding: 4em 0rem;
-        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.883);
-    }
-    a{
-        img{
-            &:hover{
-                -webkit-transform: scale(1.1);
-                -moz-transform: scale(1.1);
-                -o-transform: scale(1.1);
-                -ms-transform: scale(1.1);
-                transform: scale(1.1);
-                transition: all 0.5s;                
-            }
-        }
-    }
+    main {
+        height: 100vh;
     
-    .conocenos{
-        padding: 0px 0.7em;        
-        background-color: $color-bg-section-hsla;
-        //text-shadow: 0.6px 1px 1px rgba(0, 0, 0, 0.525);
-        color: $color-bg-section-2;
-        
-        h3{
-            padding: .3em 0em;
-            border-top: 1px solid $color-bg-section-2;
-            border-bottom: 1px solid $color-bg-section-2;            
-            font-weight: 600;
-            letter-spacing: .1em;
+        .banner {
+            background-color: $color-bg-section-2;
+            padding: 4em 0rem;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.883);
         }
-        p{
-            width: 60%;
-            padding-top: 0.6em;
-            letter-spacing: 0.04em;
-            font-size: .8em;
-        }
-        //boton//
-        .leer-mas{
-            background-color: transparent;
-            border: 1px solid $color-bg-section-2;
-            border-radius: 10px;
-            padding: 7px 15px;
-            font-size: .9em;
-
-        }
-        .truncate {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-line-clamp: 2; /* Número de líneas a mostrar */
-            -webkit-box-orient: vertical;
-        }
-        
-        .more {
-            cursor: pointer;
-            color: blue;
-            text-decoration: underline;
-        }
-        .expanded {
-            -webkit-line-clamp: unset;
-        }
-        
-
-    }
-    h2 {
-        letter-spacing: 2px;
-    }
-
-    .bienvenida {
-        p {
-            strong-animar {
-                color: #000;
-            }
-
-            &:hover {
-                color: rgba(13, 13, 60, 0.756);
-                font-size: 1.02em;
-                box-shadow: 0px 2px 15px rgb(0, 0, 0, .2);
-                border-radius: 7px;
-                padding: 50px 100px;
-                transition: all 0.8s;
-            }
-        }
-    }
-
-    /* index.html */
-    #seccion-nutricion {
-        h5 {
-            margin: 0 auto;
-
-            width: fit-content;
-            background-color: rgba(255, 193, 7, 0.6);
-
-            &:hover {
-                box-shadow: 2px 2px 8px rgba(137, 104, 7, 0.883);
-                transition: all 0.8s;
-            }
-        }
-
-    }
-
-
-    /*pages destacados.html*/
-    #titulo {
-        h1 {
-            text-shadow: 2px 2px 6px rgb(0, 0, 0, .5);
-            font-size: 3em;
-            font-weight: 700;
-            background-color: #ff9933;
-        }
-
-    }
-
-
-    section {
-        margin: 40px;
-
-        h5 {
-            padding: 5px 0px;
-        }
-
-        .items_alim_saludable {
-            padding: 30px 40px;
-            background-color: antiquewhite;
-        }
-
-        .diploma {
-            width: 100%;
-            margin: 0 auto;
-        }
-
-        .sobremi_pages {
-            h6 {
-                background-color: rgb(54, 106, 128);
-                color: #fff;
-                font-weight: 300;
-                padding: 10px 0;
-                text-align: center;
-                margin: 40px 0;
-            }
-        }
-
-
-
-
-
-        #video {
-
-            .video-container {
-                position: relative;
-                width: 100%;
-                padding-bottom: 56.25%;
-                /* 16:9 aspect ratio (height/width) */
-                overflow: hidden;
-
-                iframe {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
+    
+        a {
+            img {
+                &:hover {
+                    -webkit-transform: scale(1.1);
+                    -moz-transform: scale(1.1);
+                    -o-transform: scale(1.1);
+                    -ms-transform: scale(1.1);
+                    transform: scale(1.1);
+                    transition: all 0.5s;
                 }
             }
-
         }
-
-
-    }
-
-    /*  talleres  */
-
-    #talleres {
-        .bg-talleres {
-            width: fit-content;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #05255c;
-            border-top-left-radius: 200px;
-            border-bottom-right-radius: 100px;
-            box-shadow: 2px 4px 10px rgba(10, 92, 76, 0.903);
-            color: #fff;
-            transition:
-                background-color 1.5s ease-in-out,
-                box-shadow 2s ease-in-out,
-                border-top-left-radius 0.5s ease-in-out,
-                border-bottom-right-radius 0.8s ease-in-out;
-
-
-        }
-
-    }
-
-    /* consultas*/
-    #consultas {
-        width: 100%;
-        margin: 0 auto;
-        padding: 50px 0px;
-
-        .size-form {
-            width: 50%;
-            margin: 0 auto;
-        }
-
-        .bg-consultas {
-            &:hover {
-                background-color: $color-bg-section-2;
-                border-top-right-radius: 12px;
-                border-bottom-right-radius: 45px;
-                border-bottom-left-radius: 270px;
-                transition: 0.5s;
-                padding: 50px;
-                box-shadow: 2px 2px 10px rgba(13, 13, 60, 0.756);
-                transition:
-                    background-color 0.7s ease-in-out,
-                    box-shadow 3s ease-in-out,
-                    padding 1.5s ease-in-out,
-                    border-top-right-radius 1.7s ease-in-out, border-bottom-left-radius 1.6s ease-in-out;
+    
+        .conocenos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1em;
+            padding: 0px 0.7em;
+            background-color: $color-bg-section-hsla;
+            //text-shadow: 0.6px 1px 1px rgba(0, 0, 0, 0.525);
+            color: $color-bg-section-2;
+    
+            .texto-bienvenida{
+                flex: 1;
             }
-
-            h2 {
-                letter-spacing: 2px;
+            h3 {
+                padding: .3em 0em;
+                border-top: 1px solid $color-bg-section-2;
+                border-bottom: 1px solid $color-bg-section-2;
+                font-weight: 600;
+                letter-spacing: .1em;
+            }
+    
+            p {
+                width: 60%;
+                padding-top: 0.6em;
+                letter-spacing: 0.04em;
+                font-size: .8em;
+            }
+    
+            //boton//
+            .leer-mas {
+                background-color: transparent;
+                border: 1px solid $color-bg-section-2;
+                border-radius: 10px;
+                padding: 7px 15px;
+                font-size: .9em;
+                color: $color-bg-section-2;
+            }
+    
+            .truncate {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                /* Número de líneas a mostrar */
+                -webkit-box-orient: vertical;
+            }
+    
+            .more {
+                cursor: pointer;
+                color: blue;
+                text-decoration: underline;
+            }
+    
+            .expanded {
+                -webkit-line-clamp: unset;
+            }
+    
+            //img-bienvenida// 
+            .img-bienvenida{
+                flex: 1;            
             }
         }
-
-
-
-        /*por que el hover se replica en los elementos internos?? */
-    }
-
-    /* recetas */
-    #recetas {
+    
         h2 {
-            padding: 10px;
-            border-left: solid 2px rgb(13, 109, 90);
-
-            &:hover {
-                letter-spacing: 2px;
-                padding: 60px;
-                border-left: solid 600px rgba(13, 109, 90, 0.842);
-                transition: all 1s ease-in-out;
+            letter-spacing: 2px;
+        }
+    
+        .bienvenida {
+            p {
+                strong-animar {
+                    color: #000;
+                }
+    
+                &:hover {
+                    color: rgba(13, 13, 60, 0.756);
+                    font-size: 1.02em;
+                    box-shadow: 0px 2px 15px rgb(0, 0, 0, .2);
+                    border-radius: 7px;
+                    padding: 50px 100px;
+                    transition: all 0.8s;
+                }
             }
         }
+    
+        /* index.html */
+        #seccion-nutricion {
+            h5 {
+                margin: 0 auto;
+    
+                width: fit-content;
+                background-color: rgba(255, 193, 7, 0.6);
+    
+                &:hover {
+                    box-shadow: 2px 2px 8px rgba(137, 104, 7, 0.883);
+                    transition: all 0.8s;
+                }
+            }
+    
+        }
+    
+    
+      
+    
+    
+        section {
+            margin: 0em 1em;
+    
+            h5 {
+                padding: 5px 0px;
+            }
+    
+            .items_alim_saludable {
+                padding: 30px 40px;
+                background-color: antiquewhite;
+            }
+    
+            .diploma {
+                width: 100%;
+                margin: 0 auto;
+            }
+    
+            .sobremi_pages {
+                h6 {
+                    background-color: rgb(54, 106, 128);
+                    color: #fff;
+                    font-weight: 300;
+                    padding: 10px 0;
+                    text-align: center;
+                    margin: 40px 0;
+                }
+            }
+    
+    
+    
+    
+    
+            #video {
+    
+                .video-container {
+                    position: relative;
+                    width: 100%;
+                    padding-bottom: 56.25%;
+                    /* 16:9 aspect ratio (height/width) */
+                    overflow: hidden;
+    
+                    iframe {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+    
+            }
+    
+    
+        }
+    
+        /*  talleres  */
+    
+        #talleres {
+            .bg-talleres {
+                width: fit-content;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #05255c;
+                border-top-left-radius: 200px;
+                border-bottom-right-radius: 100px;
+                box-shadow: 2px 4px 10px rgba(10, 92, 76, 0.903);
+                color: #fff;
+                transition:
+                    background-color 1.5s ease-in-out,
+                    box-shadow 2s ease-in-out,
+                    border-top-left-radius 0.5s ease-in-out,
+                    border-bottom-right-radius 0.8s ease-in-out;
+    
+    
+            }
+    
+        }
+    
+        /* consultas*/
+        #consultas {
+            width: 100%;
+            margin: 0 auto;
+            padding: 50px 0px;
+    
+            .size-form {
+                width: 50%;
+                margin: 0 auto;
+            }
+    
+            .bg-consultas {
+                &:hover {
+                    background-color: $color-bg-section-2;
+                    border-top-right-radius: 12px;
+                    border-bottom-right-radius: 45px;
+                    border-bottom-left-radius: 270px;
+                    transition: 0.5s;
+                    padding: 50px;
+                    box-shadow: 2px 2px 10px rgba(13, 13, 60, 0.756);
+                    transition:
+                        background-color 0.7s ease-in-out,
+                        box-shadow 3s ease-in-out,
+                        padding 1.5s ease-in-out,
+                        border-top-right-radius 1.7s ease-in-out, border-bottom-left-radius 1.6s ease-in-out;
+                }
+    
+                h2 {
+                    letter-spacing: 2px;
+                }
+            }
+    
+    
+    
+            /*por que el hover se replica en los elementos internos?? */
+        }
+    
+        /* recetas */
+        #recetas {
+            h2 {
+                padding: 10px;
+                border-left: solid 2px rgb(13, 109, 90);
+    
+                &:hover {
+                    letter-spacing: 2px;
+                    padding: 60px;
+                    border-left: solid 600px rgba(13, 109, 90, 0.842);
+                    transition: all 1s ease-in-out;
+                }
+            }
+        }
+    
     }
-
-    /* links interes */
-
-    #links-interes {
-        display: flex;
-        justify-content: space-between;
-
-        .card-body {
-
-            transition: transform $transition-duration ease-in-out;
-            box-shadow: 4px 4px 8px rgba(13, 13, 60, 0.756);
-            background: linear-gradient(to bottom, #87CEEB, #4F94CD);
-
-            &:hover {
-                transform: translateX(20px);
-            }
-
-            &:nth-child(2):hover {
-                transform: translateX(-20px);
-            }
-
-            &:nth-child(3):hover {
-                transform: translateY(20px);
-            }
-
-            &:nth-child(4):hover {
-                transform: translateY(-20px);
-            }
-        }
-
-        .card {
-            border: none;
-        }
-
-        h5 {
-            color: #fff;
-        }
-    }
-
 }
+
 
 
 
@@ -369,108 +345,25 @@ main {
     }
 }
 
-
-#definiciones {
-    /* pages destacados.html - video */
-    display: block;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-
-    .definiciones {
-        background-color: rgb(54, 107, 129);
-
-        p {
-            text-align: justify;
-        }
-
-        img {
-            box-shadow: 2px 2px 2px rgb(0, 0, 0, .5);
-        }
-    }
-
-
-}
-
-.img_bienvenida {
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.756);
-
-    &:hover {
-        transform: scale(1.025);
-        transition: transform 0.5s ease-out;
-    }
-
-    .seccionDos {
-        background-color: #fff;
-        position: relative;
-        top: auto
-    }
-
-}
-
-#titulo_h1 {
-    background-color: #d7f6ccbb;
-    box-shadow: 0px 4px 7px rgb(0, 0, 0, .5);
-
-    h1 {
-        font-family: 'Rubik', sans-serif;
-        font-weight: 400;
-        padding: 0;
-        margin: 0 auto;
-        font-size: 2em;
-
-    }
-
-
-}
-
-.bienvenida {
-    h4 {
-        text-align: start;
-    }
-
-    :hover {
-        text-align: center;
-        transition: all 0.8s;
-
-    }
-}
-
-
-
-
-
-
 /* --- footer --- */
-
-footer {
-    background-color: rgb(54, 106, 128);
-    box-shadow: 0px -4px 7px rgb(0, 0, 0, .5);
-    .classSuscripcion {
+#footer{
+    footer {    
+        position: absolute;
+        display: flex;
         margin: 0 auto;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .newsletter {
-        max-width: 450px;
-        margin: 0 auto;
-    }
-
-    ul {
-        list-style: none;
-        padding: 0;
-
-        li {
-            text-decoration: none;
-            display: inline;
-            margin: 10px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgb(54, 106, 128);
+        box-shadow: 0px -4px 7px rgb(0, 0, 0, .5);    
+        
+        .foot{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
-    
-    
-
 
 
 .creator {
@@ -499,97 +392,23 @@ footer {
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 450px) {
-    main {
-        #titulo {
-            h1 {
-                padding: 0 10px;
-                font-size: 2em;
-            }
-        }
-    }
+  
 }
 
 @media only screen and (max-width: 766px) {
-    header {
-
-        nav {
-            .logo_header {
-                padding: 0 10px;
-                justify-content: space-around;
-
-            }
-
-        }
-    }
+  
 
 }
 
 /* Ejemplo de Media Query para pantallas más pequeñas (dispositivos móviles) */
 @media only screen and (max-width: 767px) {
-    header {
-
-        nav {
-            .logo_header {
-                justify-content: space-between;
-
-                a {
-                    font-size: 1.3rem;
-                    padding-left: 1em;
-                }
-
-            }
-
-        }
-    }
-
-    /* main */
-    main {
-
-        .talleres {
-            display: block;
-
-            .bg-talleres {
-                div {
-                    margin-bottom: 20px;
-
-                }
-
-                h2 {
-                    background-color: #fff;
-                    padding: 5px;
-
-                }
-
-                &:hover {
-                    color: #05255c;
-                }
-
-            }
-
-        }
-
-    }
-
-    /* footer */
-
-    footer {
-        h3 {
-            margin: 20px;
-        }
-    }
+   
 
 }
 
 /* Ejemplo de Media Query para tabletas y pantallas medianas */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    main {
-
-        .talleres {
-            display: flex;
-            flex-direction: column;
-
-        }
-    }
+    
 }
 
 /* Ejemplo de Media Query para pantallas más grandes */
