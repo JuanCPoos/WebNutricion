@@ -5,10 +5,18 @@ img {
   height: auto;
 }
 
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
 /* --- header --- */
 header {
-  background-color: rgb(13, 109, 90);
   width: 100%;
+  height: 100vh;
   top: 0;
   z-index: 1000;
 }
@@ -27,20 +35,65 @@ header nav .navbar {
 
 /* --- main ----*/
 #wrapper {
-  min-height: 100%;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+#wrapper .banner {
+  display: flex;
+  margin: 0 auto;
+  align-content: center;
+  justify-content: center;
+  padding: 0;
+  width: 100%;
+}
+#wrapper #contacto-section {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1em;
+}
+#wrapper #contacto-section .contacto-container .formulario-contacto {
+  margin: 1em 0em;
+  padding: 1em;
+  flex: 1;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+}
+#wrapper #contacto-section .contacto-container .formulario-contacto label {
+  margin-bottom: 0.5em;
+}
+#wrapper #contacto-section .contacto-container .formulario-contacto input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 1em;
+  width: 100%;
+}
+#wrapper #contacto-section .contacto-container .formulario-contacto button {
+  background-color: rgba(255, 193, 7, 0.7215686275);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  border-radius: 0.3em;
+  color: #15551d;
+  font-weight: 500;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+#wrapper #contacto-section .contacto-container .formulario-contacto button:hover {
+  font-weight: 600;
+  background-color: #ffc107;
+}
+#wrapper #contacto-section .contacto-container .redes-sociales a {
+  padding: 1em;
 }
 #wrapper main {
-  height: 100vh;
   /* index.html */
   /*  talleres  */
   /* consultas*/
   /* recetas */
-}
-#wrapper main .banner {
-  background-color: #2d9c79;
-  padding: 4em 0rem;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.883);
 }
 #wrapper main a img:hover {
   -webkit-transform: scale(1.1);
@@ -73,7 +126,7 @@ header nav .navbar {
   width: 60%;
   padding-top: 0.6em;
   letter-spacing: 0.04em;
-  font-size: 0.8em;
+  font-size: 1.3em;
 }
 #wrapper main .conocenos .leer-mas {
   background-color: transparent;
@@ -98,9 +151,6 @@ header nav .navbar {
 }
 #wrapper main .conocenos .expanded {
   -webkit-line-clamp: unset;
-}
-#wrapper main .conocenos .img-bienvenida {
-  flex: 1;
 }
 #wrapper main h2 {
   letter-spacing: 2px;
@@ -147,20 +197,6 @@ header nav .navbar {
   text-align: center;
   margin: 40px 0;
 }
-#wrapper main section #video .video-container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-  /* 16:9 aspect ratio (height/width) */
-  overflow: hidden;
-}
-#wrapper main section #video .video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 #wrapper main #talleres .bg-talleres {
   width: fit-content;
   margin: 0 auto;
@@ -205,6 +241,14 @@ header nav .navbar {
   border-left: solid 600px rgba(13, 109, 90, 0.842);
   transition: all 1s ease-in-out;
 }
+#wrapper main .referencias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2em;
+}
 
 #id-404 {
   display: flex;
@@ -239,20 +283,9 @@ header nav .navbar {
 }
 
 /* --- footer --- */
-#footer footer {
-  position: absolute;
-  display: flex;
-  margin: 0 auto;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgb(54, 106, 128);
-  box-shadow: 0px -4px 7px rgba(0, 0, 0, 0.5);
-}
-#footer footer .foot {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+footer {
+  /* background-color: rgb(54, 106, 128);
+  box-shadow: 0px -4px 7px rgb(0, 0, 0, .5); */
 }
 
 .creator p {
@@ -273,8 +306,37 @@ header nav .navbar {
 
 /**************************************/
 /* MEDIA QUERIES */
+@media only screen and (max-width: 450px) {
+  #contacto-section .contacto-container .formulario-contacto {
+    min-width: 200px;
+  }
+  footer {
+    padding: 3em 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .creator {
+    width: 300px;
+  }
+}
 /* Ejemplo de Media Query para pantallas más pequeñas (dispositivos móviles) */
+@media only screen and (max-width: 767px) {
+  #contacto-section .contacto-container .formulario-contacto {
+    min-width: 400px;
+  }
+}
 /* Ejemplo de Media Query para tabletas y pantallas medianas */
+@media only screen and (min-width: 768px) {
+  #contacto-section .contacto-container .formulario-contacto {
+    min-width: 570px;
+  }
+}
 /* Ejemplo de Media Query para pantallas más grandes */
+@media only screen and (min-width: 992px) {
+  main #presentacion .img-presentacion img {
+    width: 45%;
+  }
+}
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */

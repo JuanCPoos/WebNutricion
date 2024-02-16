@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- favicon -->
   <link rel="shortcut icon" href="/assets/favicon/favicon_32x32.ico" type="image/x-icon">
@@ -31,97 +31,38 @@
 
 <body>
   <div id="wrapper">
-    <!--header-->
-    <div id="header">
-      <header>
-        <div class="banner">
-          <div class="container text-center mb-2 py-4">
-            <a class="navbar-brand" href="/index.html#titulo_h1"><img
-                src="/assets/images/logo/Escuelita Saludable/wallpaper_1920x1080.png"
-                alt="banner de la escuelita saludable"></a>
-          </div>
+    <div class="container banner">
+      <a class="navbar-brand" href="/pages/escuelitasaludable.html">
+        <img
+          src="/assets/images/logo/Escuelita Saludable/default_transparent_765x625.png"
+          alt="banner de la escuelita saludable"></a>
+    </div>
+    <section id="contacto-section">
+      <div class="contacto-container">
+        <div class="redes-sociales">
+          <a href="https://www.instagram.com/tu_instagram" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/favicon/instagram.png" width="50" alt="Instagram">
+            </a>
+          <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/favicon/whatsapp.png" width="40" alt="WhatsApp1">
+          </a>
+          <a href="https://wa.me/9876543210" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/favicon/whatsapp.png" width="40" alt="WhatsApp2">
+          </a>
         </div>
-      </header>
+        <form action="" class="formulario-contacto">
+          <label for="correo">Ingresa tu correo:</label>
+          <input type="email" name="correo" id="" placeholder="tucorreo@example.com" required>
+          <button type="submit">Recibir información</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+       <!-- desarrollado -->
+    <div class="creator">    
+      <p>| 2024 - <a href="https://maps.app.goo.gl/52v42zkNmfZigAM67">Paraná - Entre Ríos - Argentina |</a>  <br>Creado por <a href="#"><img src="/assets/ico/icons8-programación-48.png" width="30"></a></p>
     </div>
-    <div id="content">
-      <!--main -->
-      <main>
-        <!--<div id="titulo_h1" class="titulo my-5 py-5">
-            <div class="container text-center">
-                <h1>titulo mayor</h1>
-            </div>            
-        </div>-->
-        <!---->
-        <!-- boton inscripción-->
-        <!---->
-        <!-- section presentación-->
-        <section id="presentacion">
-          <div id="conocenos" class="conocenos container py-5">
-            <!--texto-->
-            <div class="container texto-bienvenida">
-              <div class=" enfoque py-3">
-                <h3>Enfoque</h3>
-                <p class="truncate">Fomentamos hábitos <strong>alimenticios saludables </strong>para toda la familia!
-                  Nos dedicamos a inspirar a niños, adolescentes y padres a embarcarse en un emocionante viaje hacia una
-                  vida más saludable. No solo abogamos por la alimentación consciente, sino que también cultivamos la
-                  conexión con la tierra, enseñamos el arte de cultivar nuestros propios alimentos y promovemos la
-                  cocina casera como un acto de amor hacia nuestro bienestar. En la Escuelita Saludable, creemos en la
-                  nutrición como un viaje colectivo, donde cada bocado se convierte en una oportunidad para mejorar
-                  nuestras vidas. </p>
-                <button class="leer-mas">Leer más</button>
-              </div>
-              <div class="experiencia my-3">
-                <h3>Experiencia educativa y sostenible</h3>
-                <p class="truncate">Sumérgete en una experiencia educativa única mientras exploramos juntos el
-                  fascinante mundo de la alimentación saludable. En la Escuelita Saludable, no solo nos limitamos a
-                  enseñar buenos hábitos alimenticios; también cultivamos nuestro propio alimento de manera sostenible.
-                  Desde la siembra hasta la mesa, aprendemos a apreciar cada fase del proceso y entendemos la
-                  importancia de elegir ingredientes frescos y nutritivos. Nuestra misión es empoderar a cada miembro de
-                  la familia a través del conocimiento, fomentando prácticas alimenticias conscientes que beneficien no
-                  solo nuestro bienestar personal sino también el del planeta.</p>
-                <button class="leer-mas">Leer más</button>
-              </div>
-              <div class="cocina-conciente my-4 py-3">
-                <h3>Cocina consciente</h3>
-                <p class="truncate">En la Escuelita Saludable, la cocina es un acto consciente y amoroso. Nos sumergimos
-                  en el arte de la preparación de alimentos, explorando sabores, texturas y combinaciones que no solo
-                  deleitan nuestros paladares, sino que también nutren nuestras vidas. Desde talleres culinarios hasta
-                  recetas creativas, inspiramos a las familias a mejorar la calidad de lo que consumen diariamente. Con
-                  nosotros, cada comida se convierte en una oportunidad para cultivar hábitos alimenticios saludables
-                  que perdurarán toda la vida. ¡Únete a nosotros en la Escuelita Saludable y transforma tu relación con
-                  la comida para un futuro más saludable y vibrante!</p>
-                <button class="leer-mas">Leer más</button>
-              </div>
-
-            </div>
-            <!--imagen-->
-            <div class="img-bienvenida">
-              <img
-                src="https://images.unsplash.com/photo-1519996409144-56c88c9aa612?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                class="" alt="imagen de un plato de verduras y alimentos saludables" width="1000px">
-            </div>
-          </div>
-        </section>
-      </main>
-    </div>
-    <!-- footer -->
-    <div id="footer">
-      <footer>
-        <div class="foot">
-          <div class="container">
-            <!--contacto-->
-            <div class="contacto">
-              <article>
-                <h3>Contacto</h3>
-                <p>Email: info@nutricionista.com</p>
-                <p>Teléfono: +549 3434 556 789</p>
-              </article>
-
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
+    </footer>
   </div>
   <script src="/js/index.js"></script>
 </body>
