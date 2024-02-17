@@ -18,6 +18,7 @@ body {
     flex-direction: column;
     padding: 0;
     margin: 0;
+
 }
 
 
@@ -51,9 +52,9 @@ header {
 
 /* --- main ----*/
 #wrapper {
+    
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
 
     //solo en landing page
     .banner {
@@ -67,14 +68,68 @@ header {
     }
 
     #contacto-section {
+        background-color: #15551d;
+        //width: 100%;       
         display: flex;
         align-content: center;
-        justify-content: center;
-        text-align: center;
-        margin: 0 auto;
-        padding: 1em;
+        justify-content: space-around;
+        margin: 0;
+        padding: 5em;
 
+
+        .textos {
+            color: #D2E823;
+            max-width: 900px;
+            margin-left: 5em;
+
+            h1 {
+                font-size: 1.7em;     
+                letter-spacing: .1em;          
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.600);
+                color: #fff;
+            }
+            h2{
+                font-size: 1.9em;
+                .subrayado{
+                    text-decoration: underline;
+                    margin-bottom: -10px;
+                }
+            }
+            .email-contacto{
+             text-align: left;
+             display: flex;
+             justify-content: left;
+                .email{
+                    
+                    padding: .36em;
+                    margin-right: 1em;
+                }
+            }
+        }
+
+        .img-bienvenida {
+            display: flex;
+            float: right;
+            max-width: 650px;
+            margin: 0 auto;
+            margin-right: 0;
+
+            
+            img {
+                margin: 0 auto;
+                padding: 0;
+                box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.600);
+                transition: transform 0.5s;
+                &:hover{
+                    transform: rotate(10deg) scale(1.1);
+                }
+            }
+
+        }
+       
         .contacto-container {
+            text-align: center;
+
             .formulario-contacto {
                 margin: 1em 0em;
                 padding: 1em;
@@ -119,6 +174,23 @@ header {
 
             }
         }
+    }
+    #nombre{
+        background-color: #fff;
+
+        h1{
+            font-size: 6em;
+            text-align: center;
+        }
+        .card{
+            margin: 0;
+            padding: 0;
+            max-width: 60%;
+            .titulo-tarjeta{
+                background-color: $color-bg-section;
+            }
+        }
+        
     }
 
     main {
@@ -334,7 +406,7 @@ header {
             }
         }
 
-        .referencias{
+        .referencias {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -391,8 +463,41 @@ header {
 /* --- footer --- */
 
 footer {
-    /* background-color: rgb(54, 106, 128);
-    box-shadow: 0px -4px 7px rgb(0, 0, 0, .5); */
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(54, 106, 128);
+
+    //box-shadow: 0px -4px 7px rgb(0, 0, 0, .5); */
+    .social-icons {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+
+        /* Eliminar los márgenes para los íconos sociales */
+        ul {
+            list-style: none;
+
+            li {
+                margin: 0 10px;
+                /* Espacio entre los íconos sociales */
+                list-style: none;
+
+                a {
+                    list-style: none;
+                }
+
+            }
+        }
+    }
+
 }
 
 
@@ -484,13 +589,12 @@ footer {
     main {
         #presentacion {
             .img-presentacion {
-                img{
-                    width: 45%
+                img {
+                    width: 100%
                 }
             }
         }
     }
 
-    
-}
 
+}

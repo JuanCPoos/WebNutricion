@@ -37,7 +37,6 @@ header nav .navbar {
 #wrapper {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
 }
 #wrapper .banner {
   display: flex;
@@ -48,12 +47,58 @@ header nav .navbar {
   width: 100%;
 }
 #wrapper #contacto-section {
+  background-color: #15551d;
   display: flex;
   align-content: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: space-around;
+  margin: 0;
+  padding: 5em;
+}
+#wrapper #contacto-section .textos {
+  color: #D2E823;
+  max-width: 900px;
+  margin-left: 5em;
+}
+#wrapper #contacto-section .textos h1 {
+  font-size: 1.7em;
+  letter-spacing: 0.1em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+#wrapper #contacto-section .textos h2 {
+  font-size: 1.9em;
+}
+#wrapper #contacto-section .textos h2 .subrayado {
+  text-decoration: underline;
+  margin-bottom: -10px;
+}
+#wrapper #contacto-section .textos .email-contacto {
+  text-align: left;
+  display: flex;
+  justify-content: left;
+}
+#wrapper #contacto-section .textos .email-contacto .email {
+  padding: 0.36em;
+  margin-right: 1em;
+}
+#wrapper #contacto-section .img-bienvenida {
+  display: flex;
+  float: right;
+  max-width: 650px;
   margin: 0 auto;
-  padding: 1em;
+  margin-right: 0;
+}
+#wrapper #contacto-section .img-bienvenida img {
+  margin: 0 auto;
+  padding: 0;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.6);
+  transition: transform 0.5s;
+}
+#wrapper #contacto-section .img-bienvenida img:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+#wrapper #contacto-section .contacto-container {
+  text-align: center;
 }
 #wrapper #contacto-section .contacto-container .formulario-contacto {
   margin: 1em 0em;
@@ -88,6 +133,21 @@ header nav .navbar {
 }
 #wrapper #contacto-section .contacto-container .redes-sociales a {
   padding: 1em;
+}
+#wrapper #nombre {
+  background-color: #fff;
+}
+#wrapper #nombre h1 {
+  font-size: 6em;
+  text-align: center;
+}
+#wrapper #nombre .card {
+  margin: 0;
+  padding: 0;
+  max-width: 60%;
+}
+#wrapper #nombre .card .titulo-tarjeta {
+  background-color: rgba(255, 193, 7, 0.7215686275);
 }
 #wrapper main {
   /* index.html */
@@ -284,8 +344,34 @@ header nav .navbar {
 
 /* --- footer --- */
 footer {
-  /* background-color: rgb(54, 106, 128);
-  box-shadow: 0px -4px 7px rgb(0, 0, 0, .5); */
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(54, 106, 128);
+}
+footer .social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  /* Eliminar los márgenes para los íconos sociales */
+}
+footer .social-icons ul {
+  list-style: none;
+}
+footer .social-icons ul li {
+  margin: 0 10px;
+  /* Espacio entre los íconos sociales */
+  list-style: none;
+}
+footer .social-icons ul li a {
+  list-style: none;
 }
 
 .creator p {
@@ -335,7 +421,7 @@ footer {
 /* Ejemplo de Media Query para pantallas más grandes */
 @media only screen and (min-width: 992px) {
   main #presentacion .img-presentacion img {
-    width: 45%;
+    width: 100%;
   }
 }
 
